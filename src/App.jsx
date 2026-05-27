@@ -54,9 +54,9 @@ function App() {
 
       const randomMessage =
         messages[
-          Math.floor(
-            Math.random() * messages.length
-          )
+        Math.floor(
+          Math.random() * messages.length
+        )
         ]
 
       setMessage(randomMessage)
@@ -144,8 +144,8 @@ function App() {
       {/* Glow principal */}
       <div
         style={{
-          width: "600px",
-          height: "600px",
+          width: "clamp(350px, 80vw, 600px)",
+          height: "clamp(350px, 80vw, 600px)",
 
           borderRadius: "50%",
 
@@ -223,8 +223,8 @@ function App() {
       {/* Núcleo principal */}
       <div
         style={{
-          width: "420px",
-          height: "420px",
+          width: "clamp(280px, 70vw, 420px)",
+          height: "clamp(280px, 70vw, 420px)",
 
           borderRadius: "50%",
 
@@ -272,7 +272,7 @@ function App() {
         {/* Porcentaje dinámico */}
         <h1
           style={{
-            fontSize: "5rem",
+            fontSize: "clamp(3rem, 10vw, 5rem)",
 
             margin: 0,
 
